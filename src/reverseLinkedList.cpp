@@ -26,13 +26,15 @@ struct node * reverseLinkedList(struct node *head) {
 	// traverse the entire linked list
 	while (q != NULL)
 	{
-		s = r;
-		r = q;
-		q = q->next;
-		r->next = s;
+	s = r;
+	r = q;
+	q = q->next;
+	r->next = s;
 	}
 
 	head = r;
 	//return NULL;
 	return r;
-}
+	}
+	
+
